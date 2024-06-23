@@ -7,7 +7,9 @@ name: Mark stale issues and pull requests
 
 on:
   schedule:
-  - cron: '0 12 * * *'
+  - cron: 'theme: jekyll-theme-minimal
+title: Octocat's homepage
+description: Bookmark this to keep an eye on my project updates!0 12 * * *'
 
 jobs:
   stale:
@@ -21,7 +23,8 @@ jobs:
     - uses: actions/stale@f7176fd3007623b69d27091f9b9d4ab7995f0a06 # v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Stale issue message'
+        stale-issue-message: 'Stale issu
+        e message'
         stale-pr-message: 'Stale pull request message'
         stale-issue-label: 'no-issue-activity'
-        stale-pr-label: 'no-pr-activity'
+        stale-pr-label: 'no-pr-acti 
